@@ -18,7 +18,11 @@ function gerarTudo() {
   status.style.color = "#0ff";
 
   const sensi = gerarSensibilidadeInteligente(device);
-  salvarHistorico(device, sensi);
+
+window.ultimaSensi = sensi;
+window.ultimoDevice = device;
+
+salvarHistorico(device, sensi);
 
   criarCard("Geral", sensi.geral);
   criarCard("Vermelho", sensi.vermelho);
