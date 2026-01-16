@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sensi Xitada • Gerador</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/theme-neon.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body class="neon-bg">
+
+<script>
+  if (localStorage.getItem("auth") !== "true") {
+    window.location.href = "login.html";
+  }
+</script>
+
+<header class="top-bar">
+  <h1>SENSI XITADA</h1>
+</header>
+
+<main class="container">
+
+  <div class="search-box neon-glass">
+    <input type="text" id="deviceInput" placeholder="Pesquisar celular...">
+    <button onclick="gerarTudo()">GERAR</button>
+    <p id="deviceStatus"></p>
+  </div>
+
+  <div id="resultados" class="cards"></div>
+
+</main>
+
+<footer class="social">
+  <a href="https://www.instagram.com/_oliveira.2ss" target="_blank">📸 Instagram</a>
+  <a href="https://www.tiktok.com/@oliveira.2ss" target="_blank">🎵 TikTok</a>
+</footer>
+
+<script src="js/device-database.js"></script>
+<script src="js/device-validator.js"></script>
+<script src="js/sensi-engine.js"></script>
+<script src="js/learning-engine.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
