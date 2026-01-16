@@ -1,0 +1,19 @@
+body.neon-bg {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top, #0ff2, #000 70%);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.logo-glow {
+  font-size: 3rem;
+  text-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+}
+
+.neon-glass {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  box-shadow: 0 0 30px #0ff;
+}
