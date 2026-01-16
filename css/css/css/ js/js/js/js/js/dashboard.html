@@ -5,14 +5,13 @@
   <title>Sensi Xitada • Gerador</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="css/theme-neon.css">
-<link rel="stylesheet" href="css/animations.css">
-<link rel="stylesheet" href="css/dashboard.css">
-<link rel="stylesheet" href="css/autocomplete.css">
+  <link rel="stylesheet" href="css/theme-neon.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/autocomplete.css">
 </head>
 
 <body class="neon-bg">
-
 
 <header class="top-bar">
   <h1>SENSI XITADA</h1>
@@ -22,8 +21,8 @@
 
   <div class="search-box neon-glass">
     <input type="text" id="deviceInput" placeholder="Pesquisar celular...">
-    <button onclick="gerarTudo()">GERAR💀</button>
-<button onclick="exportar()">EXPORTAR SENSI</button>
+    <button type="button" id="btnGerar">GERAR 💀</button>
+    <button type="button" id="btnExportar">EXPORTAR SENSI</button>
     <p id="deviceStatus"></p>
   </div>
 
@@ -42,8 +41,8 @@
 <script src="js/learning-engine.js"></script>
 <script src="js/dashboard.js"></script>
 <script src="js/export-engine.js"></script>
-
 <script src="js/autocomplete.js"></script>
+
 <script>
   initAutocomplete("deviceInput");
 </script>
