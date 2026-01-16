@@ -1,4 +1,7 @@
 function gerarTudo() {
+
+  playSound("generate"); // 🔊 SOM AQUI
+
   const device = document.getElementById("deviceInput").value.trim();
   const status = document.getElementById("deviceStatus");
   const output = document.getElementById("resultados");
@@ -14,7 +17,7 @@ function gerarTudo() {
   status.innerText = "✅ Dispositivo reconhecido";
   status.style.color = "#0ff";
 
-  const sensi = gerarSensibilidadeInteligente(device)
+  const sensi = gerarSensibilidadeInteligente(device);
   salvarHistorico(device, sensi);
 
   criarCard("Geral", sensi.geral);
