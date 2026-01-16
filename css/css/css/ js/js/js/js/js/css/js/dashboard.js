@@ -14,7 +14,7 @@ function gerarTudo() {
   status.innerText = "✅ Dispositivo reconhecido";
   status.style.color = "#0ff";
 
-  const sensi = gerarSensibilidade();
+  const sensi = gerarSensibilidadeInteligente(device)
   salvarHistorico(device, sensi);
 
   criarCard("Geral", sensi.geral);
