@@ -1,0 +1,16 @@
+.autocomplete-list {
+  margin-top: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.autocomplete-item {
+  padding: 10px;
+  cursor: pointer;
+  color: #0ff;
+  border-bottom: 1px solid #0ff2;
+}
+
+.autocomplete-item:hover {
+  background: #0ff2;
+}
